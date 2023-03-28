@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Delicious Handrawn', cursive;
+    padding: 90px 20px 0;
+}
+
+
+.header{
+    background-color: blue;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.nav-link{
+    color:white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover{
+    background-color: rgb(255, 10, 10);
+    transition: 0.5s;
+
+}
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 70px;
+    }
+    
+    
+    .header{   
+        height: 80px;
+    }
+    
+    .logo{
+        font-size: 30px;
+        padding: 0 40px;
+        line-height: 80px;
+    }
+    
+    .nav-menu{
+        align-items: center;
+        margin-right: 20px;
+        flex-direction: column;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow: -y:auto;
+        left: 100%;
+        transition: 0.3s;
+
+    }
+    
+    .nav-menu-item{
+         line-height: 80px;
+    }
+    
+    .nav-menu-link{
+        padding: 8px 12px;
+        border-radius: 3px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background: none;
+        color: aqua;
+    
+    }
+    .nav-toggle{     
+        display: block;
+    }
+    .nav-menu_visible{
+
+    }
+
+}
